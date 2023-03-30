@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hard-skills.component.css']
 })
 export class HardSkillsComponent {
-
+  
+  
 }

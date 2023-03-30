@@ -3,3 +3,151 @@
     margin-bottom: 20px;
     font-size:24px;
 }
+
+.textsize{ 
+    font-size:20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .col-md-9{
+        margin-top: 30px;
+    }
+    }
+  
+  
+/*SVILUPPO WEB*/
+  .progress1 {
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .progress-bar1 {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .progress-moved1 .progress-bar1 {
+    background-color: #850085;
+    box-shadow: 0 0 30px #850085;
+    animation: progress1 5s;
+    width:100%
+  }
+  
+  @keyframes progress1 {
+    0% {
+      width: 0%;
+      background: #d815ff;
+    }
+  
+    80% {
+      width: 100%;
+      background: #850085;
+      box-shadow: 0 0 40px #850085;
+    }
+  }
+  
+/*Object Oriented Languages*/
+
+.progress2 {
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .progress-moved2 .progress-bar2 {
+    background-color: #850085;
+    box-shadow: 0 0 30px #850085;
+    animation: progress2 5s;
+    width:90%
+  }
+  
+  @keyframes progress2 {
+    0% {
+      width: 0%;
+      background: #d815ff;
+    }
+  
+    80% {
+      width: 90%;
+      background: #850085;
+      box-shadow: 0 0 40px #850085;
+    }
+  }
+
+
+/*Database*/
+
+.progress3 {
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .progress-bar3 {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .progress-moved3 .progress-bar3 {
+    background-color: #850085;
+    box-shadow: 0 0 30px #850085;
+    animation: progress3 5s;
+    width:70%
+  }
+  
+  @keyframes progress3 {
+    0% {
+      width: 0%;
+      background: #d815ff;
+    }
+  
+    80% {
+      width: 70%;
+      background: #850085;
+      box-shadow: 0 0 40px #850085;
+    }
+  }
+
+/*Analisi di progetto*/
+  
+.progress4 {
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .progress-bar4 {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .progress-moved4 .progress-bar4 {
+    background-color: #850085;
+    box-shadow: 0 0 30px #850085;
+    animation: progress4 5s;
+    width:80%
+  }
+  
+  @keyframes progress4 {
+    0% {
+      width: 0%;
+      background: #d815ff;
+    }
+  
+    80% {
+      width: 80%;
+      background: #850085;
+      box-shadow: 0 0 40px #850085;
+    }
+  }
