@@ -1,0 +1,25 @@
+
+.row{
+    --bs-gutter-x:0rem !important;
+}
+.textlight{
+    color:white;
+    padding-right:0px;
+}
+
+.size{
+    font-size:24px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .size{
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+}

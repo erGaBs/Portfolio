@@ -8,6 +8,12 @@ import { FooterComponent } from './components/main/footer/footer.component';
 import { HomeComponent } from './components/main/home/home.component';
 import { AboutmeComponent } from './components/main/aboutme/aboutme.component';
 import { ProgettiComponent } from './components/main/progetti/progetti.component';
+import { CarouselComponent } from './components/utils/carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChiSonoComponent } from './components/utils/chi-sono/chi-sono.component';
+import { ContattiComponent } from './components/utils/contatti/contatti.component';
+import { SoftSkillsComponent } from './components/utils/soft-skills/soft-skills.component';
+import { HardSkillsComponent } from './components/utils/hard-skills/hard-skills.component';
 
 
 @NgModule({
@@ -17,11 +23,17 @@ import { ProgettiComponent } from './components/main/progetti/progetti.component
     FooterComponent,
     HomeComponent,
     AboutmeComponent,
-    ProgettiComponent
+    ProgettiComponent,
+    CarouselComponent,
+    ChiSonoComponent,
+    ContattiComponent,
+    SoftSkillsComponent,
+    HardSkillsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
