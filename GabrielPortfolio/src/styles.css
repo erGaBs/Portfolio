@@ -4,10 +4,20 @@
 
 body{
     margin:0px;
-    background-color: #090830 ;
     padding:0px;
 }
+
+.darkthemebody{
+    background-color: #090830 ;
+}
+
+.lightthemebody{
+    background-color: #090830 ;
+}
+
 html, body { height: 100%; }
+
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
