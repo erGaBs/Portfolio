@@ -38,6 +38,10 @@ a{
   text-decoration: none;
 }
 
+a p:hover{
+  color:#2272FF;
+}
+
 .contacts{
   color:#2272FF;
 }
