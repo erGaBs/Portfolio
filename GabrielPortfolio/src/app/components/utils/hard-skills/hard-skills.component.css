@@ -2,6 +2,8 @@
     margin-top: 30px;
     margin-bottom: 20px;
     font-size:35px;
+    color: #2272FF;
+    font-weight: bold;
 }
 
 .textsize{ 
@@ -30,8 +32,8 @@
   }
   
   .progress-moved1 .progress-bar1 {
-    background-color: #850085;
-    box-shadow: 0 0 30px #850085;
+    background-color: #2272FF;
+    box-shadow: 0 0 30px #2272FF;
     animation: progress1 5s;
     width:100%
   }
@@ -39,13 +41,13 @@
   @keyframes progress1 {
     0% {
       width: 0%;
-      background: #d815ff;
+      background: #2272FF;
     }
   
     80% {
       width: 100%;
-      background: #850085;
-      box-shadow: 0 0 40px #850085;
+      background: #2272FF;
+      box-shadow: 0 0 40px #2272FF;
     }
   }
   
@@ -64,8 +66,8 @@
   }
   
   .progress-moved2 .progress-bar2 {
-    background-color: #850085;
-    box-shadow: 0 0 30px #850085;
+    background-color: #2272FF;
+    box-shadow: 0 0 30px #2272FF;
     animation: progress2 5s;
     width:90%
   }
@@ -73,13 +75,13 @@
   @keyframes progress2 {
     0% {
       width: 0%;
-      background: #d815ff;
+      background: #2272FF;
     }
   
     80% {
       width: 90%;
-      background: #850085;
-      box-shadow: 0 0 40px #850085;
+      background: #2272FF;
+      box-shadow: 0 0 40px #2272FF;
     }
   }
 
@@ -99,8 +101,8 @@
   }
   
   .progress-moved3 .progress-bar3 {
-    background-color: #850085;
-    box-shadow: 0 0 30px #850085;
+    background-color: #2272FF;
+    box-shadow: 0 0 30px #2272FF;
     animation: progress3 5s;
     width:70%
   }
@@ -108,13 +110,13 @@
   @keyframes progress3 {
     0% {
       width: 0%;
-      background: #d815ff;
+      background: #2272FF;
     }
   
     80% {
       width: 70%;
-      background: #850085;
-      box-shadow: 0 0 40px #850085;
+      background: #2272FF;
+      box-shadow: 0 0 40px #2272FF;
     }
   }
 
@@ -133,8 +135,8 @@
   }
   
   .progress-moved4 .progress-bar4 {
-    background-color: #850085;
-    box-shadow: 0 0 30px #850085;
+    background-color: #2272FF;
+    box-shadow: 0 0 30px #2272FF;
     animation: progress4 5s;
     width:80%
   }
@@ -142,12 +144,12 @@
   @keyframes progress4 {
     0% {
       width: 0%;
-      background: #d815ff;
+      background: #2272FF;
     }
   
     80% {
       width: 80%;
-      background: #850085;
-      box-shadow: 0 0 40px #850085;
+      background: #2272FF;
+      box-shadow: 0 0 40px #2272FF;
     }
   }

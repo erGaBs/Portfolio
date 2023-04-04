@@ -2,6 +2,8 @@
     margin-top: 30px;
     margin-bottom: 20px;
     font-size:35px;
+    color: #2272FF;
+    font-weight: bold;
 }
 
 
@@ -28,8 +30,8 @@
   }
 
   .circle-with-text:hover {
-    color: #00f7ff;
-    border: 1px solid #00f7ff;
-    text-shadow: 0 0 15px #00f7ff;
+    color: #2272FF;
+    border: 1px solid #2272FF;
+    text-shadow: 0 0 15px #2272FF;
     transition: all 0.5s ease;
   }

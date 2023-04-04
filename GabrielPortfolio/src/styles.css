@@ -8,11 +8,11 @@ body{
 }
 
 .darkthemebody{
-    background-color: #090830 ;
+    background-color: #1D1D1D ;
 }
 
 .lightthemebody{
-    background-color: #090830 ;
+    background-color: white ;
 }
 
 html, body { height: 100%; }
