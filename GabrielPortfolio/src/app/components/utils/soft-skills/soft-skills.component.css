@@ -23,6 +23,11 @@
     
   }
 
+
+  .circle-with-text:hover {
+    cursor: pointer;
+  }
+
   .contCircles{
     display: flex;
   align-items: center;

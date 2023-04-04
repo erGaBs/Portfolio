@@ -14,7 +14,8 @@ import { ChiSonoComponent } from './components/utils/chi-sono/chi-sono.component
 import { ContattiComponent } from './components/utils/contatti/contatti.component';
 import { SoftSkillsComponent } from './components/utils/soft-skills/soft-skills.component';
 import { HardSkillsComponent } from './components/utils/hard-skills/hard-skills.component';
-import { ToastrModule } from 'ngx-toastr';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 @NgModule({
@@ -35,9 +36,9 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
