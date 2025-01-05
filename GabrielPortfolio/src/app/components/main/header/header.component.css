@@ -17,5 +17,32 @@
       width: 100%;
     }
 
-    
   }
+
+
+  nav{
+      background-color: #3b3c3a !important;
+  }
+
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+
+ .nav-link:hover{
+  cursor: pointer;
+ }
+
+
+ a{
+    font-family: genovaThin;
+    font-size: 18px;
+    color: #fefefe;
+ }
+
+ .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,254, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border: 0px;
+} 

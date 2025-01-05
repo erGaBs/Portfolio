@@ -1,4 +1,19 @@
 div{
-    height:800px;
-    background-color: purple;
+    height:auto;
+    width: 80%;
+    margin: auto !important;
 }
+
+.aboutme{
+    margin-top: 20px !important;
+    font-family: genovaBlack;
+    font-size: 4vw;
+    color: #fefefe;
+}
+
+@media screen and (max-width: 992px) {
+    .aboutme{
+        font-family: genovaBlack;
+        font-size: 6vw;
+    }
+  }

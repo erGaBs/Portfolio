@@ -2,3 +2,41 @@
 *{
     margin: 0px !important;
 }
+
+  @font-face {
+    font-family: "genovaBlack";
+    src: url('assets/fonts/Genova-Black.otf');
+  }
+  @font-face {
+    font-family: "genovaBlackItalic";
+    src: url('assets/fonts/Genova-BlackItalic.otf');
+  }
+  @font-face {
+    font-family: "genovaItalic";
+    src: url('assets/fonts/Genova-Italic.otf');
+  }
+  @font-face {
+    font-family: "genovaMedium";
+    src: url('assets/fonts/Genova-Medium.otf');
+  }
+  @font-face {
+    font-family: "genovaMediumItalic";
+    src: url('assets/fonts/Genova-MediumItalic.otf');
+  }
+  @font-face {
+    font-family: "genovaThin";
+    src: url('assets/fonts/Genova-Thin.otf');
+  }
+  @font-face {
+    font-family: "genovaThinItalic";
+    src: url('assets/fonts/Genova-ThinItalic.otf');
+  }
+  @font-face {
+    font-family: "genova";
+    src: url('assets/fonts/Genova.otf');
+  }
+
+  body{
+    background-color: #3b3c3a !important;
+    color:white !important;
+  }

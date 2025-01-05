@@ -1,0 +1,74 @@
+.container{
+    margin-top: 15px !important;
+}
+
+.softskills{
+    font-family: genovaBlack;
+    font-size: 2vw;
+    color: #fefefe;
+    text-align: center;
+    margin-bottom: 10px !important;
+}
+
+.tab{
+    border-radius: 50px;
+    background: #3b3c3a;
+    box-shadow:  -14px 14px 34px #292928, 14px -14px 34px #4d4f4c;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: genova;
+        font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .softskills{
+        font-family: genovaBlack;
+        font-size: 4vw;
+    }
+
+    .tab{
+        width: 100px;
+        height: 100px;
+        margin: auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: genova;
+        font-size: 1rem;
+    }
+
+  }
+
+
+  .items{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+
+.item {
+    flex: 25%;
+    max-width: 20%;
+    min-height: 20%;
+    margin-bottom: 30px !important;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .item {
+        position: relative;
+        margin-bottom: 30px !important;
+        flex: 50%;
+        max-width: 43%;
+        text-align: center;
+    }
+}
+

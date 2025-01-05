@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   scroll(el: string) {
-    var offset = 56; 
+    var offset = 59; 
     var element = document.getElementById(el); 
+    this.closeMenu()
     window.scroll({ top: (element!.offsetTop - offset), left: 0, behavior: 'smooth' });
+    
 }
 
+  closeMenu(){
+    let element = document.getElementById("navbarNav")
+    element?.classList.remove("show")
+  }
 }
