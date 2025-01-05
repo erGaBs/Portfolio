@@ -16,6 +16,7 @@
     .paragrafo{
         justify-content: center;
         text-align: center;
+        font-family: genovaThin;
         width: 100%;
     }
   }

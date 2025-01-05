@@ -15,4 +15,45 @@
         font-family: genovaBlack;
         font-size: 4vw;
     }
+
+    .text{
+        font-size: 2vw !important;
+    }
+
+    .exp{
+        margin-top: 30px !important;
+    }
   }
+
+
+
+.bar{
+    float: left;
+    
+}
+
+.dot {
+    margin: auto !important;
+    height: 20px;
+    width: 20px;
+    background-color: #0000fe;
+    box-shadow: 0 0 10px #1818ce;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .text{
+    float: right;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: genovaThin;
+    font-size: 0.9vw;
+  }
+
+.line{
+    width: 1px;
+    height: 80%;
+    border: 1px solid white;
+    margin: auto !important;
+}
