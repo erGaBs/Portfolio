@@ -6,7 +6,7 @@
 .bold{
     font-family: genovaBlack;
     font-size: 18px;
-    color: #0000fe;
+    color: #F71735;
 }
 
 @media screen and (max-width: 992px) {
@@ -25,7 +25,7 @@
     
     .riga{
         margin-top: 10px !important;
-       border-top: 3px solid #0000fe;
+       border-top: 3px solid #F71735;
     }
 
     .paragrafo{
