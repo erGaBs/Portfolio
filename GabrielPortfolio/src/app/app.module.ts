@@ -13,6 +13,8 @@ import { ParagrafoComponent } from './components/sections/aboutme/paragrafo/para
 import { SoftskillsComponent } from './components/sections/aboutme/softskills/softskills.component';
 import { HardskillsComponent } from './components/sections/aboutme/hardskills/hardskills.component';
 import { EsperienzeComponent } from './components/sections/aboutme/esperienze/esperienze.component';
+import { CarouselComponent } from './components/sections/projects/carousel/carousel.component';
+import { SliderComponent } from './components/sections/projects/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { EsperienzeComponent } from './components/sections/aboutme/esperienze/es
     ParagrafoComponent,
     SoftskillsComponent,
     HardskillsComponent,
-    EsperienzeComponent
+    EsperienzeComponent,
+    CarouselComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
