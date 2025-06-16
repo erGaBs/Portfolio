@@ -1,25 +1,43 @@
-<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-  <div class="container-fluid">
-   
-    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav class="navbar">
+  <div class="navbar-left">
+    <div class="logo">Gabriel<span class="accent">Colla</span></div>
+  </div>
+
+  <div class="navbar-center desktop">
+    <ul class="nav-links">
+      <li><a href="#top">HOME</a></li>
+      <li><a href="#about">SU DI ME</a></li>
+      <li><a href="#projects">PROGETTI</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-right">
+    <button class="language-switch desktop" (click)="toggleLingua()">
+      🌐 {{ lingua }}
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" (click)="scroll('presentazione')" aria-current="page">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="scroll('about')" href="#">SU DI ME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="scroll('progetti')" href="#">PROGETTI</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">CV</a>
-        </li>
-        
-      </ul>
-    </div>
+
+    <!-- Burger menu (mobile) -->
+    <button
+      class="burger mobile"
+      [class.open]="menuAperto"
+      (click)="toggleMenu()"
+      aria-label="Toggle menu"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
   </div>
 </nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" *ngIf="menuAperto">
+  <ul class="nav-links">
+    <li><a href="#top" (click)="chiudiMenu()">HOME</a></li>
+    <li><a href="#about" (click)="chiudiMenu()">SU DI ME</a></li>
+    <li><a href="#projects" (click)="chiudiMenu()">PROGETTI</a></li>
+    <li><a href="#cv" (click)="chiudiMenu()">CV</a></li>
+  </ul>
+  <button class="language-switch" (click)="toggleLingua()">🌐 {{ lingua }}</button>
+</div>

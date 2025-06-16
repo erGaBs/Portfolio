@@ -1,6 +1,4 @@
-.container{
-    margin-top: 15px !important;
-}
+
 
 .softskills{
     font-family: genovaBlack;
@@ -10,65 +8,64 @@
     margin-bottom: 10px !important;
 }
 
-.tab{
-    border-radius: 50px;
-    background: #2E2E2E;
-    box-shadow:  -14px 14px 34px #292928, 14px -14px 34px #4d4f4c;
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: genova;
-        font-size: 1rem;
-}
-
 @media screen and (max-width: 992px) {
     .softskills{
         font-family: genovaBlack;
         font-size: 4vw;
     }
-
-    .tab{
-        width: 100px;
-        height: 100px;
-        margin: auto !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: genova;
-        font-size: 1rem;
-    }
-
   }
 
-
-  .items{
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: space-around;
+:root {
+  --card-bg: #1C1C1C;
+  --text-color: #ffffff;
 }
 
-
-.item {
-    flex: 25%;
-    max-width: 20%;
-    min-height: 20%;
-    margin-bottom: 30px !important;
-    text-align: center;
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
-
-@media (max-width: 800px) {
-    .item {
-        position: relative;
-        margin-bottom: 30px !important;
-        flex: 50%;
-        max-width: 43%;
-        text-align: center;
-    }
+.skill-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.03),
+    8px 8px 16px rgba(0, 0, 0, 0.6);
 }
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    -2px -2px 6px rgba(255, 255, 255, 0.05),
+    4px 4px 12px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 

@@ -210,6 +210,10 @@
  }
 
 
+ #home, #about, #projects, #cv {
+  scroll-margin-top: 80px;
+}
+
 
 
  

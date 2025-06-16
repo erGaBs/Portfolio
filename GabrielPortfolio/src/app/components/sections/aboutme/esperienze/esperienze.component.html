@@ -1,48 +1,34 @@
 <div class="container">
-    <p class="esperienze">ESPERIENZE</p>
-    <div class="row">
-       <div class="col-lg-3 mt-2 d-flex exp">
-         <div class="bar"><span class="dot"></span> <div class="line"></div></div>
-         <div class="text"><p class="title">PERCORSO SCOLASTICO</p>  Il mio percorso di studi finisce all’Istituto Italo 
-            Calvino, dove mi sono diplomato nel ramo 
-            Informatica. 
-            Questa scuola mi ha aiutato molto a sviluppare 
-            tutte le capacità che fino ad oggi ed in futuro 
-            mi serviranno</div>
-       </div>
-       <div class="col-lg-3 mt-2 d-flex exp">
-         <div class="bar"><span class="dot"></span><div class="line"></div></div>
-         <div class="text"><p class="title">PRIMA ESPERIENZA LAVORATIVA</p> La mia prima esperienza lavorativa è stata 
-            svolta come Tester, il mio ruolo principale per 
-            6 mesi è stato “trovare il punto di rottura” di 
-            qualsiasi applicativo mi venisse consegnato 
-            in mano, una mansione non proprio adatta a 
-            me (mi ritengo più abile nel creare che nel 
-            distruggere), ma che mi ha insegnato molto</div>
-       </div>
-       <div class="col-lg-3 mt-2 d-flex exp">
-         <div class="bar"><span class="dot"></span><div class="line"></div></div>
-         <div class="text"><p class="title">PRIMO LAVORO DA PROGRAMMATORE</p>  6 mesi dopo la prima esperienza venni assunto 
-            come sviluppatore Full-Stack, per un anno ho 
-            fatto bug-fixing e sviluppato un applicativo intero 
-            utilizzando linguaggi e framework completamente 
-            nuovi. L’applicativo che ho costruito è stato 
-            sviluppato utilizzando Angular8 e .NET, due 
-            framework che al momento si piazzano al primo 
-            posto tra i miei preferiti, difatti il portfolio sul 
-            quale siete è sviluppato in questi linguaggi. 
-            Siamo sinceri, con Wordpress sono capaci tutti 
-            ;)</div>
-       </div>
-       <div class="col-lg-3 mt-2 d-flex exp">
-         <div class="bar"><span class="dot"></span><div class="line"></div></div>
-         <div class="text"><p class="title">SOFTWARE ENGINEER</p>  Finita la mia esperienza da sviluppatore Full
-            Stack mi è stata fatta un’offerta dalla mia 
-            attuale azienda, dove ricopro il ruolo di Software 
-            Engineer, ovvero un Full-Stack developer che 
-            però riesce anche ad effettuare efficacemente 
-            analisi progettuali e all’occorrenza, formare 
-            persone</div>
-       </div>
+    <p class="esperienze">ISTRUZIONE & ESPERIENZE</p>
+    
+<div class="accordion-container">
+  <div
+    class="accordion-item"
+    *ngFor="let exp of esperienze; let i = index"
+  >
+    <button
+      class="accordion-header"
+      (click)="toggle(i)"
+      [attr.aria-expanded]="apertoIndex === i"
+      [attr.aria-controls]="'content-'+i"
+      id="accordion-header-{{i}}"
+    >
+      <span class="icon material-icons">{{ exp.icona }}</span>
+      <span class="title">{{ exp.titolo }}</span>
+      <span class="periodo">{{ exp.periodo }}</span>
+      <span class="arrow" [class.open]="apertoIndex === i">⌄</span>
+    </button>
+    <div
+      class="accordion-content"
+      [id]="'content-'+i"
+      role="region"
+      [attr.aria-labelledby]="'accordion-header-'+i"
+      [class.open]="apertoIndex === i"
+    >
+      <p>{{ exp.descrizione }}</p>
     </div>
+  </div>
+</div>
+
+
    </div>

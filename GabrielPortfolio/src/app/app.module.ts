@@ -14,6 +14,9 @@ import { SoftskillsComponent } from './components/sections/aboutme/softskills/so
 import { HardskillsComponent } from './components/sections/aboutme/hardskills/hardskills.component';
 import { EsperienzeComponent } from './components/sections/aboutme/esperienze/esperienze.component';
 
+//materials
+
+
 
 @NgModule({
   declarations: [

@@ -17,3 +17,8 @@ div{
         font-size: 6vw;
     }
   }
+
+
+  #home, #about, #projects, #cv {
+  scroll-margin-top: 80px;
+}

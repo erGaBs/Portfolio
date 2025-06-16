@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,17 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  lingua = 'IT';
+  menuAperto = false;
 
-  scroll(el: string) {
-    var offset = 59; 
-    var element = document.getElementById(el); 
-    this.closeMenu()
-    window.scroll({ top: (element!.offsetTop - offset), left: 0, behavior: 'smooth' });
-    
-}
+  toggleLingua() {
+    this.lingua = this.lingua === 'IT' ? 'EN' : 'IT';
+  }
 
-  closeMenu(){
-    let element = document.getElementById("navbarNav")
-    element?.classList.remove("show")
+  toggleMenu() {
+    this.menuAperto = !this.menuAperto;
+  }
+
+  chiudiMenu() {
+    this.menuAperto = false;
+  }
+
+   @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    const width = event.target.innerWidth;
+    if (width > 768 && this.menuAperto) {
+      this.menuAperto = false; // Chiudi menu se la larghezza è > tablet
+    }
   }
 }

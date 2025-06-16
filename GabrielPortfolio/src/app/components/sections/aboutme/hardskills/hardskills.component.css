@@ -17,87 +17,61 @@
     }
   }
 
-  .items{
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: space-around;
+
+
+
+.hard-skills-section {
+  background-color: #2E2E2E;
+  padding: 3rem 1rem;
+  color: #EDEDED;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-
-.item {
-    flex: 50%;
-    max-width: 50%;
-    min-height: 20%;
-    margin-bottom: 30px !important;
-    text-align: center;
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-
-@media (max-width: 800px) {
-    .item {
-        position: relative;
-        margin-bottom: 30px !important;
-        flex: 100%;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .subject{
-        font-size: 3vw !important;
-    }
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.progressbar{
-    height: 15px;
-    background-color:  #fefefe;
-    margin-right: 20px !important;
-    border-radius: 20px;
+.progress-block {
+  display: flex;
+  flex-direction: column;
 }
 
-.subject{
-    font-size: 2vw;
-   display: flex;
-   font-family: genovaThin;
+.skill-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
-.progress1{
-    width: 100%;
-    height: 15px;
-    border-radius: 20px;
-    background-color:  #fefefe;
-    animation: fill 2s ;
-    animation-fill-mode: forwards;
+.progress-bar {
+  background: #1C1C1C;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
 }
 
-.progress2{
-    width: 80%;
-    height: 15px;
-    border-radius: 20px;
-    background-color:  #fefefe;
-    animation: fill 2s ;
-    animation-fill-mode: forwards;
+.progress-bar .fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #235A8C, #2978B5);
+  transition: width 1.6s ease-out;
+  border-radius: 10px;
 }
 
-.progress3{
-    width: 70%;
-    height: 15px;
-    border-radius: 20px;
-    background-color:  #fefefe;
-    animation: fill 2s ;
-    animation-fill-mode: forwards;
+/* Responsive: 1 per riga su mobile */
+@media (max-width: 768px) {
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
 }
-.progress4{
-    width: 80%;
-    height: 15px;
-    border-radius: 20px;
-    background-color:  #fefefe;
-    animation: fill 2s ;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fill {
-    to {background-color: #2978B5; box-shadow: 0 0 10px #4AA3FF}
-}
-
-
