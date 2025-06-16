@@ -16,7 +16,7 @@
 
 
   nav{
-      background-color: #3b3c3a !important;
+      background-color: #2E2E2E !important;
       box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
   }
 
@@ -26,6 +26,7 @@
 
  .nav-link:hover{
   cursor: pointer;
+  color: #4AA3FF !important;
  }
 
  .navbar-toggler{
@@ -40,7 +41,7 @@
  }
 
  .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,23,53, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(41, 120, 181, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .custom-toggler.navbar-toggler {

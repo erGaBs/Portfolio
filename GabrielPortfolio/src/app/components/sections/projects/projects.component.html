@@ -1,10 +1,32 @@
 
-
-
-<div id="progetti">
-    <p class="progetti mb-4">PROGETTI</p>
-        
-        <app-carousel></app-carousel>
-
-      <app-slider></app-slider>
+<div class="progetti">
+    <p class="mb-1 pt-4">PROGETTI</p>
 </div>
+   <div class="carousel-wrapper">
+  <div class="nav-box">
+    <button (click)="prev()">←</button>
+  </div>
+
+  <div class="carousel-track" #carouselContainer>
+    <div
+      *ngFor="let project of projects; let i = index"
+      #projectCard
+      class="project-card"
+    >
+      <img [src]="project.imageUrl" alt="{{ project.name }}" class="preview-img" />
+      <h2>{{ project.name }}</h2>
+      <p>{{ project.description }}</p>
+      <ul>
+        <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+      </ul>
+      <button (click)="openDemo(project.demoUrl)">🔗 Vedi Demo</button>
+    </div>
+  </div>
+
+  <div class="nav-box">
+    <button (click)="next()">→</button>
+  </div>
+</div>
+
+
+
