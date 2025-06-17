@@ -10,6 +10,13 @@
     margin-bottom: 10px !important;
 }
 
+@media screen and (max-width: 992px) {
+    .esperienze{
+        font-family: genovaBlack;
+        font-size: 4vw;
+    }
+  }
+
 .accordion-container {
  
   margin: 30px auto;

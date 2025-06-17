@@ -1,0 +1,260 @@
+
+ #home, #about, #projects, #cv {
+  scroll-margin-top: 80px;
+}
+
+
+.hero {
+  background-color: #242424;
+  padding: 4rem 2rem;
+  color: #fff;
+  position: relative;
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    overflow: hidden; 
+  }
+
+  .text-content {
+    flex: 1 1 500px;
+    min-width: 280px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 400;
+
+      .dot {
+        color: #1565c0;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+
+      .name {
+        color: #fff;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &.primary {
+          background-color: #1565c0;
+          color: #fff;
+
+          &:hover {
+            background-color: #2979ff;
+          }
+        }
+
+        &.outlined {
+          background-color: transparent;
+          border: 1px solid #1565c0;
+          color: #fff;
+
+          &:hover {
+            background-color: #1565c0;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .image-container {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 50%;
+      padding: 0.5rem;
+      background: radial-gradient(circle at center, #0a1cbd33 0%, transparent 70%);
+      box-shadow: 0 0 20px rgba(4, 27, 233, 0.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .image-container {
+      margin-top: 2rem;
+
+      img {
+        max-width: 250px;
+      }
+    }
+
+    .buttons {
+      justify-content: center;
+    }
+
+    .text-content{
+      flex: 1 1 100%;
+    }
+
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1565c0;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff; // cursore
+  animation:
+    typing 2.5s steps(20, end) forwards, // scrivi una volta
+    blink 0.75s step-end infinite;        // cursore sempre
+}
+
+
+.social-container {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    a {
+      color: #fff;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        color: #1565c0;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .vertical-line {
+    width: 2px;
+    height: 80px;
+    background-color: #1565c0;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .vertical-line {
+      display: none;
+    }
+
+    .social-icons {
+      flex-direction: row;
+    }
+  }
+}
+
+
+
+@media (max-width: 415px) {
+  .hero {
+    .text-content {
+      width: 100%;
+      overflow: visible;
+      text-align: center;
+
+      h2 {
+        font-size: 1.4rem !important;
+        white-space: normal; // permette il wrap su più righe
+      }
+
+      h3 {
+        font-size: 1.1rem !important;
+        margin: 0.3rem 0 !important;
+        white-space: normal;
+      }
+
+      h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 1rem !important;
+        white-space: normal;
+        word-wrap: break-word;  // evita che parole troppo lunghe escano fuori
+      }
+    }
+  }
+
+  .hero {
+    .hero-content {
+      flex-direction: column !important;
+      align-items: center !important;
+      overflow: visible !important;
+    }
+  }
+}
+
+.hero{
+  font-family: genovaThin;
+}
+
+
+
+
+
+ 
+
+
+
+ 
