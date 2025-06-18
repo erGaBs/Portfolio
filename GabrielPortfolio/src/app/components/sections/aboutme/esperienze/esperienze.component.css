@@ -126,7 +126,7 @@
 }
 
 .accordion-content.open {
-  max-height: 400px;
+  max-height: 2000px;
   padding: 20px 28px;
   opacity: 1;
 }
