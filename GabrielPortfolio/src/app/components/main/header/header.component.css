@@ -11,7 +11,7 @@
  }
 
 
-/* Base layout */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -24,7 +24,7 @@
   padding: 12px 24px;
 }
 
-/* Logo */
+
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
@@ -33,7 +33,6 @@
   color: #2196f3;
 }
 
-/* Language button */
 .language-switch {
   background: none;
   border: 1px solid #555;
@@ -48,7 +47,7 @@
   border-color: #2196f3;
 }
 
-/* Burger button (mobile only) */
+
 .burger {
   display: none;
   flex-direction: column;
@@ -71,7 +70,7 @@
   transition: all 0.3s ease;
 }
 
-/* Burger icon animated into X */
+
 .burger.open .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -83,7 +82,6 @@
 }
 
 
-/* Menu container (desktop vs mobile) */
 .menu-container {
   display: flex;
   align-items: center;
@@ -106,7 +104,6 @@
   color: #64b5f6;
 }
 
-/* Responsive */
 .desktop {
   display: flex;
 }
@@ -114,9 +111,6 @@
   display: none;
 }
 
-/* ----------------------- */
-/* Mobile styles below 768px */
-/* ----------------------- */
 @media (max-width: 768px) {
   .desktop {
     display: none !important;
@@ -134,7 +128,7 @@
   .menu-container {
     display: none;
     flex-direction: column;
-    position: static; /* <-- Cambiato da absolute a static */
+    position: static;
     top: auto;
     left: auto;
     width: 100%;
@@ -187,9 +181,9 @@
   gap: 24px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   animation: slideDown 0.3s ease forwards;
-  position: fixed; /* qui l'importante */
+  position: fixed;  
   width: 100%;
-  z-index: 999; /* sotto la navbar che ha 1000 */
+  z-index: 999;
 }
 
 

@@ -70,7 +70,7 @@
   border-radius: 10px;
 }
 
-/* Responsive: 1 per riga su mobile */
+
 @media (max-width: 768px) {
   .progress-grid {
     grid-template-columns: 1fr;

@@ -56,7 +56,7 @@
   letter-spacing: 1px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);

@@ -32,16 +32,16 @@
 }
 
 .accordion-item {
-  border: 2px solid #444;         /* bordo grigio scuro */
+  border: 2px solid #444; 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.4); /* ombra scura leggera */
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.4); 
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: #333333; /* leggermente più chiaro */
+  background-color: #333333; 
 }
 
 .accordion-item:hover {
-  border-color: #2196f3;         /* bordo blu acceso al hover */
-  box-shadow: 0 6px 12px rgb(33 150 243 / 0.5); /* ombra blu più intensa */
+  border-color: #2196f3;       
+  box-shadow: 0 6px 12px rgb(33 150 243 / 0.5);
 }
 
 .accordion-header {
@@ -70,7 +70,7 @@
 
 .icon.material-icons {
   font-size: 36px;
-  color: #2196f3; /* blu acceso */
+  color: #2196f3;
   flex-shrink: 0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -109,7 +109,7 @@
   transform: rotate(180deg);
 }
 
-/* Contenuto più grande e più padding */
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -126,7 +126,7 @@
 }
 
 .accordion-content.open {
-  max-height: 400px; /* più spazio per testo */
+  max-height: 400px;
   padding: 20px 28px;
   opacity: 1;
 }
@@ -135,7 +135,7 @@
   margin: 0;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .accordion-header {
     flex-wrap: wrap;
