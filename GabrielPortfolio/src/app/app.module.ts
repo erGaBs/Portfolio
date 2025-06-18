@@ -14,9 +14,13 @@ import { SoftskillsComponent } from './components/sections/aboutme/softskills/so
 import { HardskillsComponent } from './components/sections/aboutme/hardskills/hardskills.component';
 import { EsperienzeComponent } from './components/sections/aboutme/esperienze/esperienze.component';
 
-//materials
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -33,6 +37,15 @@ import { EsperienzeComponent } from './components/sections/aboutme/esperienze/es
     EsperienzeComponent
   ],
   imports: [
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'it',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
     BrowserModule,
     AppRoutingModule
   ],

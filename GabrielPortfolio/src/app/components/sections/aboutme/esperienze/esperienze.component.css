@@ -81,10 +81,16 @@
 }
 
 .title {
+  font-family: genovaThin;
   flex-grow: 1;
 }
 
+.description {
+  font-family: genovaThin;
+}
+
 .periodo {
+  font-family: genovaThin;
   font-weight: 500;
   font-size: 1rem;
   opacity: 0.8;

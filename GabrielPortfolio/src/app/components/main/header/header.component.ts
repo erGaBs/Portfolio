@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +10,13 @@ export class HeaderComponent {
   lingua = 'IT';
   menuAperto = false;
 
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('it');
+  }
+
   toggleLingua() {
     this.lingua = this.lingua === 'IT' ? 'EN' : 'IT';
+     this.translate.use(this.lingua.toLowerCase());
   }
 
   toggleMenu() {

@@ -14,29 +14,29 @@ export class ProjectsComponent {
 
   projects = [
     {
-      name: 'Immobiliare Massena',
-      description: 'Custom site per esposizione proprietà immobiliari.',
+      name: 'ProgettiTitle1',
+      description: 'ProgettiText1',
       imageUrl: '../../../assets/img/immobiliaremassena.png',
       technologies: ['Wordpress', 'Estatik', 'Astra', 'SiteSeo'],
       demoUrl: 'https://www.immobiliaremassena.it/'
     },
     {
-      name: 'Antonio Micucci PH',
-      description: 'Portfolio fotografico per fotografo freelance.',
+      name: 'ProgettiTitle2',
+      description: 'ProgettiText2',
       imageUrl: '../../../assets/img/antoniomicucciph.png',
       technologies: ['Wordpress', 'Astra', 'RankMath'],
       demoUrl: 'https://www.antoniomicucciph.it/'
     },
     {
-      name: 'Gioielleria Tre Passi',
-      description: 'Sito vetrina per esposizione catalogo prodotti.',
+      name: 'ProgettiTitle3',
+      description: 'ProgettiText3',
       imageUrl: '../../../assets/img/trepassi.png',
       technologies: ['Joomla', 'Astra', 'SiteSeo'],
       demoUrl: 'https://www.gioielleriatrepassi.it/'
     },
     {
-      name: 'SimpleBazar',
-      description: 'Tool gestione prezzi per MMORPG per il monitoring dei prezzi di mercato.',
+      name: 'ProgettiTitle4',
+      description: 'ProgettiText4',
       imageUrl: '../../../assets/img/simplebazar.png',
       technologies: ['Angular', 'Node.js', 'SQLite'],
       demoUrl: 'https://ergabs.github.io/SimpleBazar/login'

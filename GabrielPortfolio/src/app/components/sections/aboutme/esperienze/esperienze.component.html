@@ -1,5 +1,5 @@
 <div class="container">
-    <p class="esperienze">ISTRUZIONE & ESPERIENZE</p>
+    <p class="esperienze">{{ 'EsperienzeTitle' | translate }}</p>
     
 <div class="accordion-container">
   <div
@@ -14,7 +14,7 @@
       id="accordion-header-{{i}}"
     >
       <span class="icon material-icons">{{ exp.icona }}</span>
-      <span class="title">{{ exp.titolo }}</span>
+      <span class="title">{{ exp.titolo | translate  }}</span>
       <span class="periodo">{{ exp.periodo }}</span>
       <span class="arrow" [class.open]="apertoIndex === i">⌄</span>
     </button>
@@ -25,7 +25,7 @@
       [attr.aria-labelledby]="'accordion-header-'+i"
       [class.open]="apertoIndex === i"
     >
-      <p>{{ exp.descrizione }}</p>
+      <p class="description">{{ exp.descrizione | translate  }}</p>
     </div>
   </div>
 </div>

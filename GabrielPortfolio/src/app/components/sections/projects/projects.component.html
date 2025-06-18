@@ -1,6 +1,6 @@
 
 <div class="progetti" id="projects">
-    <p class="mb-1 pt-4">PROGETTI</p>
+    <p class="mb-1 pt-4">{{ 'Progetti1' | translate }}</p>
 </div>
    <div class="carousel-wrapper">
   <div class="nav-box">
@@ -14,12 +14,12 @@
       class="project-card"
     >
       <img [src]="project.imageUrl" alt="{{ project.name }}" class="preview-img" />
-      <h2>{{ project.name }}</h2>
-      <p>{{ project.description }}</p>
+      <h2 class="projectname">{{ project.name | translate   }}</h2>
+      <p class="projectdesc">{{ project.description | translate   }}</p>
       <ul>
-        <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+        <li class="projectdesc" *ngFor="let tech of project.technologies">{{ tech }}</li>
       </ul>
-      <button (click)="openDemo(project.demoUrl)">🔗 Vedi Demo</button>
+      <button class="projectdesc" (click)="openDemo(project.demoUrl)">🔗 {{ 'ProgettiButtonDemo' | translate }}</button>
     </div>
   </div>
 

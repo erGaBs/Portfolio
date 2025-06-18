@@ -30,6 +30,7 @@
 }
 
 .skill-card {
+  font-family: genovaThin;
   background: var(--card-bg);
   color: var(--text-color);
   min-height: 120px;

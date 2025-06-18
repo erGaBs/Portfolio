@@ -5,10 +5,10 @@
 
   <div class="navbar-center desktop">
     <ul class="nav-links">
-      <li><a href="#top">HOME</a></li>
-      <li><a href="#about">SU DI ME</a></li>
-      <li><a href="#projects">PROGETTI</a></li>
-      <li><a onclick="window.open('../../../../assets/pdf/CV GABRIEL COLLA CASAGRANDE.pdf')">CV</a></li>
+      <li><a href="#top">{{ 'Menu1' | translate }}</a></li>
+      <li><a href="#about">{{ 'Menu2' | translate }}</a></li>
+      <li><a href="#projects">{{ 'Menu3' | translate }}</a></li>
+      <li><a onclick="window.open('../../../../assets/pdf/CV GABRIEL COLLA CASAGRANDE.pdf')">{{ 'Menu4' | translate }}</a></li>
     </ul>
   </div>
 
@@ -34,10 +34,10 @@
 <!-- Mobile menu -->
 <div class="mobile-menu" *ngIf="menuAperto">
   <ul class="nav-links">
-    <li><a href="#top" (click)="chiudiMenu()">HOME</a></li>
-    <li><a href="#about" (click)="chiudiMenu()">SU DI ME</a></li>
-    <li><a href="#projects" (click)="chiudiMenu()">PROGETTI</a></li>
-    <li><a href="#cv" (click)="chiudiMenu()">CV</a></li>
+    <li><a href="#top" (click)="chiudiMenu()">{{ 'Menu1' | translate }}</a></li>
+    <li><a href="#about" (click)="chiudiMenu()">{{ 'Menu2' | translate }}</a></li>
+    <li><a href="#projects" (click)="chiudiMenu()">{{ 'Menu3' | translate }}</a></li>
+    <li><a href="#cv" (click)="chiudiMenu()">{{ 'Menu4' | translate }}</a></li>
   </ul>
   <button class="language-switch" (click)="toggleLingua()">🌐 {{ lingua }}</button>
 </div>

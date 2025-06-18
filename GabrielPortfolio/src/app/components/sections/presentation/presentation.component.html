@@ -1,13 +1,13 @@
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="text-content">
-      <h2>Ciao<span class="dot">.</span></h2>
-      <h3>Sono <span class="name">Gabriel Colla</span></h3>
-      <h1><span [class.typewriter]="animate">Software Engineer</span></h1>
+      <h2>{{ 'Presentazione1' | translate }}<span class="dot">.</span></h2>
+      <h3>{{ 'Presentazione2' | translate }} <span class="name">Gabriel Colla</span></h3>
+      <h1><span [class.typewriter]="animate">{{ 'Presentazione3' | translate }}</span></h1>
 
       <div class="buttons">
-        <button class="btn primary">Contattami</button>
-        <button class="btn outlined" type="submit" onclick="window.open('../../../../assets/pdf/CV GABRIEL COLLA CASAGRANDE.pdf')">CV</button>
+        <button class="btn primary" href="mailto:colla.gabriel01@gmail.com">{{ 'PresentazioneBtn1' | translate }}</button>
+        <button class="btn outlined" type="submit" onclick="window.open('../../../../assets/pdf/CV GABRIEL COLLA CASAGRANDE.pdf')">{{ 'PresentazioneBtn2' | translate }}</button>
       </div>
     </div>
 
